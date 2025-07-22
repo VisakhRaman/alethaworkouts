@@ -1,6 +1,6 @@
 import 'package:AlethaWorkouts/models/exercise.model.dart';
 import 'package:AlethaWorkouts/screens/exercise_detail.screen.dart';
-import 'package:AlethaWorkouts/screens/exercise_list.screen.dart.dart';
+import 'package:AlethaWorkouts/screens/exercise_list.screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

@@ -1,7 +1,7 @@
 # alethaworkouts
 This is a simple Flutter application designed to help users track their exercise routines. It demonstrates fundamental mobile app development concepts using Flutter and the BLoC state management pattern.
 
-Capabilities
+**Capabilities**
 Exercise List: Fetches a list of exercises from a remote API, displaying their names and durations on the home screen.
 
 Exercise Details: Tapping on an exercise reveals a detailed view, showing the exercise's name, description, duration, and difficulty.
@@ -12,7 +12,7 @@ Completion Tracking: Once the timer concludes, the app notifies the user that th
 
 Progress Tracking (Optional): The home screen includes a basic tracker to indicate if an exercise has been completed on consecutive days.
 
-Technologies Used
+**Technologies Used**
 Flutter & Dart: For cross-platform mobile app development.
 
 BLoC: A powerful state management solution for predictable and testable application states.
@@ -23,6 +23,6 @@ shared_preferences: For lightweight local data storage, used to persist complete
 
 circular_countdown_timer: A Flutter package for displaying a visual countdown timer.
 
-API Endpoint
+**API Endpoint**
 The app retrieves exercise data from the following mock API endpoint:
 GET https://68252ec20f0188d7e72c394f.mockapi.io/dev/workouts

@@ -26,3 +26,8 @@ circular_countdown_timer: A Flutter package for displaying a visual countdown ti
 **API Endpoint**
 The app retrieves exercise data from the following mock API endpoint:
 GET https://68252ec20f0188d7e72c394f.mockapi.io/dev/workouts
+![Screenshot_2025-07-22-19-52-01-80_6483b4ce367980c316b2161fc2d0fc46](https://github.com/user-attachments/assets/cbded964-a603-4247-bbbb-7b8484bd7f49)
+![Screenshot_2025-07-22-19-51-41-74_6483b4ce367980c316b2161fc2d0fc46](https://github.com/user-attachments/assets/c9f65090-0d96-448e-b659-0ff070147216)
+![Screenshot_2025-07-22-19-51-36-21_6483b4ce367980c316b2161fc2d0fc46](https://github.com/user-attachments/assets/5259cbe3-c37c-43c6-9fc1-72a797b19883)
+![Screenshot_2025-07-22-19-51-21-36_6483b4ce367980c316b2161fc2d0fc46](https://github.com/user-attachments/assets/7bbc17c7-feda-43d9-9dcd-527b355db1f4)
+![Screenshot_2025-07-22-19-50-58-41_6483b4ce367980c316b2161fc2d0fc46](https://github.com/user-attachments/assets/ca5e2dae-9b2e-4f3c-a959-04e7978f721a)

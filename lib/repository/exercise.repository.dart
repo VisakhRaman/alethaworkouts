@@ -22,7 +22,7 @@ class ExerciseRepository {
         return exercise.copyWith(isCompleted: completedIds.contains(exercise.id));
       }).toList();
     } catch (e) {
-      rethrow; // Rethrow the exception for the BLoC to handle
+      rethrow; // Rethrow the exception 
     }
   }
 

@@ -104,7 +104,7 @@ class ExerciseDetailScreen extends StatelessWidget {
                           duration: Duration(seconds: 2),
                         ),
                       );
-                      // Mark exercise as completed in the list BLoC
+                      // Mark exercise as completed in the list
                       context.read<ExerciseListBloc>().add(UpdateExerciseCompletion(state.exerciseId));
                       // Navigate back to home screen after a short delay
                       Future.delayed(const Duration(seconds: 2), () {
@@ -152,11 +152,11 @@ class ExerciseDetailScreen extends StatelessWidget {
                             style: TextStyle(fontSize: 22, color: Colors.grey[700]),
                           ),
                           const SizedBox(height: 10),
-                          // --- START CHANGED CODE FOR TIMER ---
+                        
                           CircularCountDownTimer(
-                            duration: state.remainingSeconds, // Initial duration for the timer
-                            initialDuration: 0, // Starts from 0 and counts down from duration
-                            controller: CountDownController(), // Required controller
+                            duration: state.remainingSeconds, 
+                            initialDuration: 0, 
+                            controller: CountDownController(), 
                             width: MediaQuery.of(context).size.width / 2,
                             height: MediaQuery.of(context).size.height / 2.5,
                             ringColor: Colors.grey[300]!,
@@ -172,25 +172,19 @@ class ExerciseDetailScreen extends StatelessWidget {
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
                             ),
-                            textFormat: CountdownTextFormat.S, // Display only seconds
+                            textFormat: CountdownTextFormat.S, 
                             autoStart: true,
-                            isReverse: true, // Count down from duration to 0
+                            isReverse: true, 
                             onStart: () {
                               debugPrint('Countdown Started');
                             },
                             onComplete: () {
                               debugPrint('Countdown Completed');
-                              // The BLoC will handle the completion event
-                              // as `ExerciseDetailBloc` uses a Stream.periodic
-                              // which ensures `TimerCompleted` is dispatched
-                              // when the original duration runs out.
                             },
                             onChange: (String timeStamp) {
                               debugPrint('Countdown Changed $timeStamp');
-                              // No need to dispatch TimerTick here, BLoC handles the actual state changes
                             },
                           ),
-                          // --- END CHANGED CODE FOR TIMER ---
                           const SizedBox(height: AppConstants.defaultPadding),
                           Text(
                             'Keep Going!',
@@ -210,9 +204,8 @@ class ExerciseDetailScreen extends StatelessWidget {
                           const SizedBox(height: 20),
                           ElevatedButton.icon(
                             onPressed: () {
-                              // Reset the detail screen bloc state for re-entry
                               context.read<ExerciseDetailBloc>().add(ResetExerciseDetail());
-                              Navigator.pop(context); // Go back to the list
+                              Navigator.pop(context); 
                             },
                             icon: const Icon(Icons.home),
                             label: const Text('Back to Home', style: TextStyle(fontSize: 18)),

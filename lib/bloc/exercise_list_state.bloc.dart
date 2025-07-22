@@ -14,7 +14,7 @@ class ExerciseListLoading extends ExerciseListState {}
 
 class ExerciseListLoaded extends ExerciseListState {
   final List<Exercise> exercises;
-  final String? lastContinuousDay; // For the optional progress tracker
+  final String? lastContinuousDay; 
 
   const ExerciseListLoaded(this.exercises, {this.lastContinuousDay});
 

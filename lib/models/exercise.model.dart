@@ -4,9 +4,9 @@ class Exercise extends Equatable {
   final String id;
   final String name;
   final String description;
-  final int duration; // Duration in seconds
+  final int duration; 
   final String difficulty;
-  final bool isCompleted; // Added for local state tracking
+  final bool isCompleted; 
 
   Exercise({
     required this.id,

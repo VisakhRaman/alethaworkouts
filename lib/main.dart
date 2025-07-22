@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ExerciseApiService apiService = ExerciseApiService();
-    final LocalStorageService localStorageService = LocalStorageService();
+    final ExerciseApiService apiService = ExerciseApiService(); // Initialize API service
+    final LocalStorageService localStorageService = LocalStorageService(); // Initialize local storage service
     final ExerciseRepository exerciseRepository = ExerciseRepository(
       apiService: apiService,
       localStorageService: localStorageService,
@@ -33,14 +33,12 @@ class MyApp extends StatelessWidget {
             exerciseRepository: exerciseRepository,
           ),
         ),
-        // ExerciseDetailBloc is created on demand in ExerciseDetailScreen
-        // as it's specific to that screen's state (timer).
       ],
       child: MaterialApp(
         title: 'Exercise App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blueGrey, // A neutral, clean color
+          primarySwatch: Colors.blueGrey, 
           appBarTheme: const AppBarTheme(
             elevation: 0,
             centerTitle: true,

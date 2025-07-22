@@ -19,7 +19,7 @@ class ExerciseDetailBloc extends Bloc<ExerciseDetailEvent, ExerciseDetailState> 
     Emitter<ExerciseDetailState> emit,
   ) {
     _currentExerciseId = event.exerciseId;
-    _timerSubscription?.cancel(); // Cancel any existing timer
+    _timerSubscription?.cancel(); 
 
     int currentSeconds = event.duration;
     emit(ExerciseTimerRunning(currentSeconds));
